@@ -1,6 +1,5 @@
 # bot.py
 import os
-
 import discord
 from dotenv import load_dotenv
 
@@ -14,7 +13,7 @@ intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-@client.event
+
 @client.event
 async def on_ready():
     for guild in client.guilds:
